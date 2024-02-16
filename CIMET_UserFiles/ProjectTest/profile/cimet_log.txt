@@ -1,0 +1,60 @@
+
+[@ 2024-01-21 18:38:59] : 
+	An error ocurred during loading  CIM-XML file "D:\proba modeli\ea9a01_1afa95b0b4854a468ceac77902ccc458\CIMET_UserFiles\ProjectTest\documents\cimet_log.txt"
+
+[parse]  (line, column) = (0, 0) : Root element is missing.
+
+---------------
+
+
+[@ 2024-01-24 17:15:34] : 
+	Problem during creating/updating system registry information:
+ Access to the registry key 'HKEY_CLASSES_ROOT\.cimws' is denied.
+
+   at Microsoft.Win32.RegistryKey.Win32Error(Int32 errorCode, String str)
+   at Microsoft.Win32.RegistryKey.CreateSubKeyInternal(String subkey, RegistryKeyPermissionCheck permissionCheck, Object registrySecurityObj, RegistryOptions registryOptions)
+   at Microsoft.Win32.RegistryKey.CreateSubKey(String subkey)
+   at TelventDMS.CIMET.Common.FileIconAssociation.Associate(String extension, String description, String iconPath, String application) in D:\SSELENA\ALL Work\ESI - Fax\SIMES\Vezbe\Vezba-6\CIMET-Standalone\CIMEnhancerTool\Common\FileIconAssociation.cs:line 48
+---------------
+
+
+[@ 2024-01-24 17:15:34] : 
+	Problem during creating/updating system registry information:
+ Access to the registry key 'HKEY_CLASSES_ROOT\.cimproj' is denied.
+
+   at Microsoft.Win32.RegistryKey.Win32Error(Int32 errorCode, String str)
+   at Microsoft.Win32.RegistryKey.CreateSubKeyInternal(String subkey, RegistryKeyPermissionCheck permissionCheck, Object registrySecurityObj, RegistryOptions registryOptions)
+   at Microsoft.Win32.RegistryKey.CreateSubKey(String subkey)
+   at TelventDMS.CIMET.Common.FileIconAssociation.Associate(String extension, String description, String iconPath, String application) in D:\SSELENA\ALL Work\ESI - Fax\SIMES\Vezbe\Vezba-6\CIMET-Standalone\CIMEnhancerTool\Common\FileIconAssociation.cs:line 48
+---------------
+
+
+[@ 2024-01-27 16:12:48] : 
+	Problem during creating/updating system registry information:
+ Access to the registry key 'HKEY_CLASSES_ROOT\.cimws' is denied.
+
+   at Microsoft.Win32.RegistryKey.Win32Error(Int32 errorCode, String str)
+   at Microsoft.Win32.RegistryKey.CreateSubKeyInternal(String subkey, RegistryKeyPermissionCheck permissionCheck, Object registrySecurityObj, RegistryOptions registryOptions)
+   at Microsoft.Win32.RegistryKey.CreateSubKey(String subkey)
+   at TelventDMS.CIMET.Common.FileIconAssociation.Associate(String extension, String description, String iconPath, String application) in D:\SSELENA\ALL Work\ESI - Fax\SIMES\Vezbe\Vezba-6\CIMET-Standalone\CIMEnhancerTool\Common\FileIconAssociation.cs:line 48
+---------------
+
+
+[@ 2024-01-27 16:12:48] : 
+	Problem during creating/updating system registry information:
+ Access to the registry key 'HKEY_CLASSES_ROOT\.cimproj' is denied.
+
+   at Microsoft.Win32.RegistryKey.Win32Error(Int32 errorCode, String str)
+   at Microsoft.Win32.RegistryKey.CreateSubKeyInternal(String subkey, RegistryKeyPermissionCheck permissionCheck, Object registrySecurityObj, RegistryOptions registryOptions)
+   at Microsoft.Win32.RegistryKey.CreateSubKey(String subkey)
+   at TelventDMS.CIMET.Common.FileIconAssociation.Associate(String extension, String description, String iconPath, String application) in D:\SSELENA\ALL Work\ESI - Fax\SIMES\Vezbe\Vezba-6\CIMET-Standalone\CIMEnhancerTool\Common\FileIconAssociation.cs:line 48
+---------------
+
+
+[@ 2024-01-27 16:29:11] : 
+	An error ocurred during loading  CIM-XML file "D:\proba modeli\ea9a01_1afa95b0b4854a468ceac77902ccc458\CIMET_UserFiles\ProjectTest\documents\cimet_log.txt"
+
+[parse]  (line, column) = (2, 1) : Data at the root level is invalid. Line 2, position 1.
+
+---------------
+

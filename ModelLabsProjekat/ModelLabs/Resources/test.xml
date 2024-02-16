@@ -1,0 +1,59 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#" xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+<!-- DayType -->
+<cim:DayType rdf:ID="DAY_TYPE_111">
+	<cim:IdentifiedObject.mRID>DAY_TYPE_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>DAY TYPE 1</cim:IdentifiedObject.name>
+</cim:DayType>
+<!-- ConductingEqupment -->
+<cim:ConductingEquipment rdf:ID="CON_EQU_111">
+	<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+	<cim:Equipment.normallyInService>true</cim:Equipment.normallyInService>
+	<cim:IdentifiedObject.mRID>CON_EQU_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>Cond Equ 1 </cim:IdentifiedObject.name>
+</cim:ConductingEquipment>
+<!-- Terminal -->
+<cim:Terminal rdf:ID="TERM_111">
+	<cim:Terminal.ConductingEquipment rdf:resource="#CON_EQU_111"/>
+	<cim:IdentifiedObject.mRID>TERM_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>Terminal 1</cim:IdentifiedObject.name>
+</cim:Terminal>
+<!-- RegulatingControl -->
+<cim:RegulatingControl rdf:ID="REG_CNT_111">
+	<cim:RegulatingControl.Terminal rdf:resource="#TERM_111"/>
+	<cim:RegulatingControl.mode>admittance</cim:RegulatingControl.mode>
+	<cim:RegulatingControl.monitoredPhase>AB</cim:RegulatingControl.monitoredPhase>
+	<cim:RegulatingControl.targetRange>10</cim:RegulatingControl.targetRange>
+	<cim:RegulatingControl.targetValue>20</cim:RegulatingControl.targetValue>
+	<cim:IdentifiedObject.mRID>REG_CNT_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>Reg Control 1</cim:IdentifiedObject.name>
+</cim:RegulatingControl>
+<!-- Seasson -->
+<cim:Season rdf:ID="SEASON_111">
+	<cim:Season.endDate> </cim:Season.endDate>
+	<cim:Season.startDate> </cim:Season.startDate>
+	<cim:IdentifiedObject.mRID>SEASON_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>Season 1</cim:IdentifiedObject.name>
+</cim:Season>
+<!-- RegulationSchedule -->
+<cim:RegulationSchedule rdf:ID="REG_SCH_111">
+	<cim:RegulationSchedule.RegulatingControl rdf:resource="#REG_CNT_111"/>
+	<cim:SeasonDayTypeSchedule.DayType rdf:resource="#DAY_TYPE_111"/>
+	<cim:SeasonDayTypeSchedule.Season rdf:resource="#SEASON_111"/>
+	<cim:IdentifiedObject.mRID>REG_SCH_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>Reg schedule</cim:IdentifiedObject.name>
+</cim:RegulationSchedule>
+<!-- TapChanger -->
+<cim:TapChanger rdf:ID="TAP_CH_111">
+	<cim:IdentifiedObject.mRID>TAP_CH_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>Tap changer 1</cim:IdentifiedObject.name>
+</cim:TapChanger>
+<!-- TapSchedule -->
+<cim:TapSchedule rdf:ID="TAP_SH_111">
+	<cim:TapSchedule.TapChanger rdf:resource="#TAP_CH_111"/>
+	<cim:SeasonDayTypeSchedule.DayType rdf:resource="#DAY_TYPE_111"/>
+	<cim:SeasonDayTypeSchedule.Season rdf:resource="#SEASON_111"/>
+	<cim:IdentifiedObject.mRID>TAP_SH_111</cim:IdentifiedObject.mRID>
+	<cim:IdentifiedObject.name>Tap Schedule</cim:IdentifiedObject.name>
+</cim:TapSchedule>
+</rdf:RDF>
+

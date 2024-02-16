@@ -1,0 +1,78 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="8">
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="DAYTYPE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="DAY_TYPE_111" />
+            <Property id="IDOBJ_NAME" value="DAY TYPE 1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="CONDUCTINGEQUIPMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CON_EQU_111" />
+            <Property id="IDOBJ_NAME" value="Cond Equ 1" />
+            <Property id="EQUIPMENT_AGGREGATE" value="0" />
+            <Property id="EQUIPMENT_NORMALLYINSERVICE" value="1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TERM_111" />
+            <Property id="IDOBJ_NAME" value="Terminal 1" />
+            <Property id="TERMINAL_CONDUCTINGEQUIPMENT" value="0x00000004ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="REGULATINGCONTROL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="REG_CNT_111" />
+            <Property id="IDOBJ_NAME" value="Reg Control 1" />
+            <Property id="REGULATINGCONTROL_MODE" value="Admittance" />
+            <Property id="REGULATINGCONTROL_MONITOREDPHASE" value="AB" />
+            <Property id="REGULATINGCONTROL_TARGETRANGE" value="10" />
+            <Property id="REGULATINGCONTROL_TARGETVALUE" value="20" />
+            <Property id="REGULATINGCONTROL_TERMINAL" value="0x00000003ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="SEASON" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SEASON_111" />
+            <Property id="IDOBJ_NAME" value="Season 1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="REGULATIONSCHEDULE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="REG_SCH_111" />
+            <Property id="IDOBJ_NAME" value="Reg schedule" />
+            <Property id="SEASONDAYTYPESCHEDULE_DAYTIPE" value="0x00000002ffffffff" />
+            <Property id="SEASONDAYTYPESCHEDULE_SEASON" value="0x00000005ffffffff" />
+            <Property id="REGULATIONSCHEDULE_REGULATIONCNTRL" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000007ffffffff" type="TAPCHANGER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TAP_CH_111" />
+            <Property id="IDOBJ_NAME" value="Tap changer 1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000008ffffffff" type="TAPSCHEDULE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TAP_SH_111" />
+            <Property id="IDOBJ_NAME" value="Tap Schedule" />
+            <Property id="SEASONDAYTYPESCHEDULE_DAYTIPE" value="0x00000002ffffffff" />
+            <Property id="SEASONDAYTYPESCHEDULE_SEASON" value="0x00000005ffffffff" />
+            <Property id="TAPSCHEDULE_TAPCHANGER" value="0x00000007ffffffff" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>
